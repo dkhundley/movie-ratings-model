@@ -1,4 +1,5 @@
 # Importing the required libraries
+import os
 import pandas as pd
 
 # Defining the ID of the Google Sheet
@@ -16,6 +17,7 @@ def load_raw():
     df_patreon = load_google_sheet(sheet_id, 'patreon')
     df_mnight = load_google_sheet(sheet_id, 'movie_night')
     df = pd.concat([df_main, df_patreon, df_mnight], axis = 0)
+    df.to_csv('../data/raw.csv', index = False)
     
 
 if __name__ == '__main__':
