@@ -462,3 +462,6 @@ __pycache__/
 # OpenCover UI analysis results
 OpenCover/
 junit/
+
+# Key Configurations Directory (added by dkhundley)
+keys/
