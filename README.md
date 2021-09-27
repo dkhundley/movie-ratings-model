@@ -12,6 +12,8 @@ But by far, Caelan will use this time to rate movies. From the latest hits debut
 
 All silliness aside, I thought it would be fun to build a predictive model around Caelan's scores that he gives to movies. It also gave me a great excuse to go back and listen to their back catalog of podcasts, as I have now been collecting [all of Caelan's ratings in a Google Spreadsheet](https://docs.google.com/spreadsheets/d/1-8tdDUtm0iBrCdCRAsYCw2KOimecrHcmsnL-aqG-l0E/edit?usp=sharing). As of Sept. 2021, I still have a ways to go through the back catalog, but I think I have enough data now to build a twin set of predictive models to predict future movie scores from Caelan. This isn't meant to be a perfectly predictive set of models, but I thought it'd be fun!
 
+**WOOF WOOF!**
+
 
 
 ## Project Scope
