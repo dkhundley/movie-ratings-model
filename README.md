@@ -1,7 +1,7 @@
 ![](docs/images/github-banner.png)
 
 # Movie Rating Model
-This repository houses all the code created by David Hundley to create a model for predicting future movie ratings from movie reviewer extraordinaire and lover of all things sour, Caelan Biehn.
+This repository houses all the code created by David Hundley to create a model for predicting future movie ratings from movie reviewer extraordinaire and lover of all things sour, Caelan Biehn. 🎬
 
 
 
@@ -14,7 +14,27 @@ All silliness aside, I thought it would be fun to build a predictive model aroun
 
 **WOOF WOOF!**
 
+## Blog Posts
+This GitHub project is being supported by another of blog posts published in *Toward Data Science* on the Medium platform. For your convenience, I have linked to each of the respective posts in this series:
 
+- [Part 1: Data Gathering!](https://towardsdatascience.com/creating-a-movie-rating-model-part-1-data-gathering-944bee6167c0)
+- *Parts 2 and beyond coming in Q4 2021! (I hope!)*
 
 ## Project Scope
-TBA
+![](docs/images/model-lifecycle.png)
+
+As noted in the background, Caelan provides two scores to his movie ratings:
+- A binary "yes/no" approval
+- A single decimal float between 0 and 10 (e.g. 4.3, 6.2)
+
+To this end, we will be creating two models: a binary classification model to support the "yes/no" approval inference, and a regression model to support the 0-10 float score. We will not predetermine which algorithms we will be using as part of this project will be dedicated to proper algorithm selections.
+
+Noted by the small graphic above, this project will take place in five parts. These parts are denoted as such:
+- **Data Gathering**: This first part of the project will gather the data we need to support the project. This includes all of Caelan's review scores, which are self-populated via my own Google Sheet. All other supporting data will come from various data sources like APIs. (There is also one sub-part to this section where we will have to perform special screen scraping to get a particularly desired feature.)
+- **Feature Engineering**: With our raw data gathering from the previous phase, we will engineer those features appropriately to use as inputs to our predictive algorithm. Because there are so many features, this section will likely come in two parts.
+- **Algorithm Selection**: As noted above, we will test out a number of different algorithms as part of this phase to see which fares the best in terms of accuracy and performance. The algorithm selection will also include a piece to perform hyperparameter tuning for each of the respective algorithms.
+- **Model Training**: Once we have determined which algorithms we will use for each of the respective predictive models, we will use this phase to create a formal model training pipeline, from start to finish. This is also equivalent to the automation of everything in previous three phases.
+- **Inference API**: I would like to use this model to support other projects, so to help assist with that, we will be creating an inference API with these predictive models housed inside of it.
+
+
+## Data Dictionary
