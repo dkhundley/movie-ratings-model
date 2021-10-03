@@ -39,5 +39,20 @@ Noted by the small graphic above, this project will take place in five parts. Th
 - **Model Training**: Once we have determined which algorithms we will use for each of the respective predictive models, we will use this phase to create a formal model training pipeline, from start to finish. This is also equivalent to the automation of everything in previous three phases.
 - **Inference API**: I would like to use this model to support other projects, so to help assist with that, we will be creating an inference API with these predictive models housed inside of it.
 
-
 # Data Dictionary
+As part of the phase 1 section on data gathering, this data dictionary below shows the data we will be working with in this project along with associated attributes about the data.
+
+## Data Dictionary Table
+
+| **Feature Name** | **Description** | **Data Type** | **Data Source** | **Used in Model?** |
+| ---------------- | --------------- | ------------- | --------------- | ------------------ |
+| `movie_name`| Name of the movie rated | `str` | Google Spreadsheet created by @dkhundley | ❌ |
+| `biehn_scale_yes_or_no` | Binary "yes/no" approval as rated by Caelan Biehn | `str` | Google Spreadsheet created by @dkhundley | ✅ |
+| `biehn_scale_rating` | 0-10 single decimal float score as rated by Caelan Biehn | `float64` | Google Spreadsheet created by @dkhundley | ✅ |
+| `tmdb_id` | Unique movie identifier used by The Movies Database (TMDb) associated to the `movie_name` | `str` | TMDb | ❌ |
+| `imdb_id` | Unique movie identifier used by the Internet Movies Database (IMDb) associated to the `movie_name` | `str` | TMDb | ❌ |
+| `budget` | Amount of money the movie cost to create in dollars | `int64` | TMDb | ✅ |
+| `primary_genre` | Primary genre of the movie as determined by TMDb | `str` | TMDb | ✅ |
+| `secondary_genre` | Secondary genre of the movie as determined by TMDb | `str` | TMDb | ✅ |
+
+## Data Sources and Attributions
