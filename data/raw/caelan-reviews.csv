@@ -1,4 +1,4 @@
-Name,Rating,Flickable
+movie_name,biehn_scale_rating,biehn_yes_or_no
 Zoolander 2,7.0,Yes
 Dope,8.5,Yes
 The Big Short,8.0,Yes
@@ -120,3 +120,4 @@ Palm Springs,8.9,Yes
 Beverly Hills Ninja,8.6,Yes
 The Girl Next Door,7.3,No
 Talladega Nights: The Ballad of Ricky Bobby,8.9,Yes
+Air Force One,,

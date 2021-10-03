@@ -1,122 +1,123 @@
-movie_title,imdb_id,rating,flickable,imdb_rating,imdb_votes
-Zoolander 2,tt1608290,7.0,Yes,4.7,67044.0
-Dope,tt3850214,8.5,Yes,7.2,82769.0
-The Big Short,tt1596363,8.0,Yes,7.8,389680.0
-Deadpool,tt1431045,10.0,Yes,8.0,947323.0
-The Martian,tt3659388,8.0,Yes,8.0,794224.0
-Hardcore Henry,tt3072482,7.5,Yes,6.7,91239.0
-San Andreas,tt2126355,4.0,No,6.1,223594.0
-Terminator,tt6450804,10.0,No,6.2,162444.0
-Captain America: Civil War,tt3498820,8.0,Yes,7.8,708019.0
-All the Way,tt0116705,9.5,Yes,5.6,96262.0
-The Man from U.N.C.L.E.,tt1638355,7.5,Yes,7.3,290024.0
-Chef,tt2883512,9.0,Yes,7.3,205666.0
-Independence Day: Resurgence,tt1628841,3.0,Yes,5.2,172546.0
-Suicide Squad,tt6334354,4.0,Yes,7.3,202044.0
-Steve Jobs,tt2080374,7.5,Yes,7.2,161904.0
-Tickled,tt5278506,8.0,Yes,7.5,17589.0
-Arrival,tt2543164,8.5,Yes,7.9,632647.0
-The Jungle Book,tt0061852,9.5,Yes,7.6,172400.0
-Why Him,tt4501244,8.0,Yes,6.2,106121.0
-Office Christmas Party,tt1711525,7.0,Yes,5.9,72959.0
-Assassin's Creed,tt2094766,1.5,No,5.7,191928.0
-Sing,tt3470600,6.0,Yes,7.1,142701.0
-Hell or High Water,tt2582782,7.0,Yes,7.6,214099.0
-Logan,tt3315342,9.0,Yes,8.1,687020.0
-Alien: Covenant,tt2316204,8.0,Yes,6.4,265334.0
-Spider-Man: Homecoming,tt2250912,7.0,Yes,7.4,554304.0
-The Belko Experiment,tt1082807,7.0,Yes,6.1,47633.0
-"Guardians of the Galaxy, Vol. 2",tt3896198,4.5,No,7.6,609866.0
-Get Out,tt5052448,9.5,Yes,7.7,529539.0
-Don't Breathe,tt6246322,8.0,Yes,6.1,21426.0
-Hannah,tt5734576,8.5,Yes,5.2,20788.0
-Dunkirk,tt5013056,8.5,Yes,7.8,594542.0
-Fantastic Beasts and Where to Find Them,tt3183660,7.0,Yes,7.3,428013.0
-Life,tt1502397,3.0,No,6.6,143555.0
-Imperium,tt4781612,7.0,Yes,6.5,44142.0
-Death Note,tt1241317,0.5,No,4.4,80482.0
-Little Evil,tt2937366,7.0,Yes,5.7,20159.0
-Gerald's Game,tt3748172,7.5,Yes,6.5,97426.0
-The Meyerowitz Stories,tt5536736,6.0,No,6.9,45763.0
-The Mist,tt0884328,7.0,Yes,7.1,290742.0
-Swingers,tt1277739,7.0,Yes,5.8,112.0
-Schindler's List,tt0108052,8.0,Yes,8.9,1265505.0
-The Darkest Hour,tt1093357,7.5,Yes,4.9,59667.0
-Three Billboards Outside Ebbing Missouri,tt5027774,6.5,No,8.1,465426.0
-Ladybird,tt0110296,5.0,Yes,7.4,3398.0
-Futile and Stupid Gesture,tt5566790,7.5,Yes,6.8,14928.0
-The Cloverfield Paradox,tt2548396,2.0,No,5.5,99826.0
-Black Panther,tt1825683,7.5,Yes,7.3,675620.0
-Ready Player One,tt1677720,7.5,Yes,7.4,396344.0
-A Quiet Place,tt8332922,9.0,Yes,7.3,156339.0
-Avengers: Infinity War,tt4154756,8.0,Yes,8.4,922668.0
-The Disaster Artist,tt3521126,9.5,Yes,7.4,145230.0
-Annihilation,tt8328716,3.0,No,3.7,8649.0
-Sicario Day of the Soldado ,tt5052474,5.0,Yes,7.1,135464.0
-Mission Impossible: Fallout,tt4912910,9.0,Yes,7.7,307629.0
-It Comes at Night,tt4695012,8.5,Yes,6.2,88387.0
-Hush,tt8752440,7.0,Yes,6.9,16133.0
-The Conjuring 2,tt3065204,6.5,Yes,7.3,247655.0
-Annabelle Creation,tt5140878,7.5,Yes,6.5,122796.0
-The Witch,tt4263482,8.0,Yes,6.9,222966.0
-The Ritual,tt5638642,6.0,No,6.3,86222.0
-Unbreakable,tt0217869,9.0,Yes,7.3,400460.0
-Patient Zero,tt3458254,5.0,No,4.5,8515.0
-Deadpool 2,tt5463162,8.0,Yes,7.7,516954.0
-Raw,tt12098056,6.0,No,,
-Littlest Reich,tt5685006,6.5,Yes,5.4,3723.0
-Jigsaw,tt3348730,2.0,No,5.8,74202.0
-The Endless,tt3986820,5.0,No,6.5,38136.0
-Happy Death Day,tt5308322,7.5,Yes,6.6,127538.0
-Hereditary,tt7784604,9.5,Yes,7.3,267829.0
-Isle of Dogs,tt5104604,8.0,Yes,7.9,151003.0
-The Shape of Water,tt5580390,7.5,Yes,7.3,392733.0
-Hold the Dark,tt5057140,5.0,Yes,5.6,35232.0
-A Star is Born,tt1517451,9.0,Yes,7.6,355417.0
-You Were Never Really Here,tt5742374,5.0,No,6.8,111721.0
-Outlaw King,tt6679794,7.5,Yes,6.9,65245.0
-The Christmas Chronicles,tt11057644,8.0,Yes,6.0,24836.0
-Bohemian Rhapsody,tt1727824,8.0,Yes,7.9,485673.0
-Bandersnatch,tt9495224,9.6,Yes,7.1,119423.0
-Bird Box,tt2737304,7.5,Yes,6.6,303397.0
-Polar,tt4139588,5.2,Yes,6.3,81884.0
-Alita Battle Angel,tt0437086,8.6,Yes,7.3,246083.0
-Triple Frontier,tt1488606,4.7,No,6.4,116930.0
-The Dirt,tt0800325,6.9,Yes,7.0,43830.0
-The Highwaymen,tt1860242,3.0,No,6.9,83296.0
-The Silence,tt7315484,0.9,No,5.3,41467.0
-Avengers: Endgame,tt4154796,9.7,Yes,8.4,937110.0
-Pet Sematary,tt0098084,4.6,No,6.6,98237.0
-The Perfection,tt7772580,6.0,Yes,6.2,39315.0
-Bad Times at the El Royale,tt6628394,7.4,Yes,7.1,138032.0
-Rocketman ,tt2066051,9.3,Yes,7.3,157368.0
-Gone Baby Gone,tt0452623,8.0,Yes,7.6,262013.0
-Ad Astra,tt2935510,6.8,Yes,6.5,213597.0
-Joker,tt7286456,9.6,Yes,8.4,1065187.0
-El Camino,tt12481806,6.1,Yes,5.2,450.0
-Midsomer,tt0647495,3.2,No,7.5,600.0
-The King,tt7984766,7.7,Yes,7.2,100639.0
-Midnight Family,tt6010976,6.1,Yes,7.4,1652.0
-The Hunt,tt8244784,3.5,No,6.5,88793.0
-The Invisible Man,tt1051906,8.1,Yes,7.1,191764.0
-The Platform,tt2382011,7.4,Yes,6.3,23.0
-Edward Scissorhands,tt0099487,5.8,No,7.9,460861.0
-The Gentlemen,tt8367814,7.8,Yes,7.8,281031.0
-Kung Fu Hustle,tt0373074,8.9,Yes,7.7,132598.0
-Starship Troopers,tt0120201,9.4,Yes,7.2,279399.0
-Signs,tt0286106,6.6,Yes,6.7,347891.0
-21 Jump Street,tt1232829,8.0,Yes,7.2,526903.0
-Extraction,tt8936646,6.1,Yes,6.7,178645.0
-A Bronx Tale,tt0106489,8.6,Yes,7.8,133877.0
-Jumanji,tt7975244,9.7,Yes,6.7,213799.0
-Jumanji: Welcome to the Jungle,tt2283362,5.9,Yes,6.9,344082.0
-Jumanji: Next Level,tt7975244,3.0,No,6.7,213799.0
-Ready or Not,tt7798634,4.4,No,6.9,126794.0
-Crawl,tt8364368,7.5,Yes,6.1,77232.0
-Eurovision Song Contest: The Story of Fire Saga,tt8580274,5.3,Yes,6.5,85704.0
-The Old Guard,tt7556122,6.0,Yes,6.7,145544.0
-Scary Stories to Tell in the Dark,tt3387520,6.2,Yes,6.2,67622.0
-Palm Springs,tt9484998,8.9,Yes,7.4,130120.0
-Beverly Hills Ninja,tt0118708,8.6,Yes,5.6,40302.0
-The Girl Next Door,tt0265208,7.3,No,6.7,214740.0
-Talladega Nights: The Ballad of Ricky Bobby,tt0415306,8.9,Yes,6.6,174723.0
+movie_name,imdb_id,biehn_scale_rating,biehn_yes_or_no,imdb_rating,imdb_votes,year
+Zoolander 2,tt1608290,7.0,Yes,4.7,67134.0,1997
+Dope,tt3850214,8.5,Yes,7.2,82856.0,1997
+The Big Short,tt1596363,8.0,Yes,7.8,390958.0,1997
+Deadpool,tt1431045,10.0,Yes,8.0,949510.0,1997
+The Martian,tt3659388,8.0,Yes,8.0,795821.0,1997
+Hardcore Henry,tt3072482,7.5,Yes,6.7,91350.0,1997
+San Andreas,tt2126355,4.0,No,6.1,224164.0,1997
+Terminator,tt0438488,10.0,No,6.5,351257.0,1997
+Captain America: Civil War,tt3498820,8.0,Yes,7.8,709806.0,1997
+All the Way,tt0116705,9.5,Yes,5.6,96359.0,1997
+The Man from U.N.C.L.E.,tt1638355,7.5,Yes,7.3,290585.0,1997
+Chef,tt2883512,9.0,Yes,7.3,206015.0,1997
+Independence Day: Resurgence,tt1628841,3.0,Yes,5.2,172796.0,1997
+Suicide Squad,tt6334354,4.0,Yes,7.3,213417.0,1997
+Steve Jobs,tt2080374,7.5,Yes,7.2,162205.0,1997
+Tickled,tt5278506,8.0,Yes,7.5,17623.0,1997
+Arrival,tt2543164,8.5,Yes,7.9,634963.0,1997
+The Jungle Book,tt0061852,9.5,Yes,7.6,172691.0,1997
+Why Him,tt4501244,8.0,Yes,6.2,106336.0,1997
+Office Christmas Party,tt1711525,7.0,Yes,5.9,73066.0,1997
+Assassin's Creed,tt2094766,1.5,No,5.7,192227.0,1997
+Sing,tt3470600,6.0,Yes,7.1,143055.0,1997
+Hell or High Water,tt2582782,7.0,Yes,7.6,214570.0,1997
+Logan,tt3315342,9.0,Yes,8.1,688915.0,1997
+Alien: Covenant,tt2316204,8.0,Yes,6.4,265830.0,1997
+Spider-Man: Homecoming,tt2250912,7.0,Yes,7.4,556139.0,1997
+The Belko Experiment,tt1082807,7.0,Yes,6.1,47835.0,1997
+"Guardians of the Galaxy, Vol. 2",tt3896198,4.5,No,7.6,611560.0,1997
+Get Out,tt5052448,9.5,Yes,7.7,531242.0,1997
+Don't Breathe,tt6246322,8.0,Yes,6.1,26066.0,1997
+Hannah,tt1114677,8.5,Yes,4.6,41189.0,1997
+Dunkirk,tt5013056,8.5,Yes,7.8,596317.0,1997
+Fantastic Beasts and Where to Find Them,tt3183660,7.0,Yes,7.3,428819.0,1997
+Life,tt0120623,3.0,No,7.2,277804.0,1997
+Imperium,tt4781612,7.0,Yes,6.5,44215.0,1997
+Death Note,tt1241317,0.5,No,4.4,80696.0,1997
+Little Evil,tt2937366,7.0,Yes,5.7,20216.0,1997
+Gerald's Game,tt3748172,7.5,Yes,6.5,98046.0,1997
+The Meyerowitz Stories,tt5536736,6.0,No,6.9,45883.0,1997
+The Mist,tt0884328,7.0,Yes,7.1,291243.0,1997
+Swingers,tt0117802,7.0,Yes,7.2,79489.0,1997
+Schindler's List,tt0108052,8.0,Yes,8.9,1267973.0,1997
+The Darkest Hour,tt1093357,7.5,Yes,4.9,59782.0,1997
+Three Billboards Outside Ebbing Missouri,tt5027774,6.5,No,8.1,466690.0,1997
+Ladybird,tt0110296,5.0,Yes,7.4,3405.0,1997
+Futile and Stupid Gesture,tt5566790,7.5,Yes,6.8,14971.0,1997
+The Cloverfield Paradox,tt2548396,2.0,No,5.5,100044.0,1997
+Black Panther,tt1825683,7.5,Yes,7.3,677626.0,1997
+Ready Player One,tt1677720,7.5,Yes,7.4,397684.0,1997
+A Quiet Place,tt8332922,9.0,Yes,7.3,160948.0,1997
+Avengers: Infinity War,tt4154756,8.0,Yes,8.4,926176.0,1997
+The Disaster Artist,tt3521126,9.5,Yes,7.4,145498.0,1997
+Annihilation,tt2798920,3.0,No,6.8,298248.0,1997
+Sicario Day of the Soldado ,tt5052474,5.0,Yes,7.1,136045.0,1997
+Mission Impossible: Fallout,tt4912910,9.0,Yes,7.7,308316.0,1997
+It Comes at Night,tt4695012,8.5,Yes,6.2,88595.0,1997
+Hush,tt8752440,7.0,Yes,6.9,16229.0,1997
+The Conjuring 2,tt3065204,6.5,Yes,7.3,248428.0,1997
+Annabelle Creation,tt5140878,7.5,Yes,6.5,123175.0,1997
+The Witch,tt0479997,8.0,Yes,5.4,92340.0,1997
+The Ritual,tt5638642,6.0,No,6.3,86645.0,1997
+Unbreakable,tt0217869,9.0,Yes,7.3,401149.0,1997
+Patient Zero,tt3458254,5.0,No,4.5,8528.0,1997
+Deadpool 2,tt5463162,8.0,Yes,7.7,518594.0,1997
+Raw,tt0091828,6.0,No,5.6,33055.0,1997
+Littlest Reich,tt5685006,6.5,Yes,5.4,3730.0,1997
+Jigsaw,tt3348730,2.0,No,5.8,74407.0,1997
+The Endless,tt3986820,5.0,No,6.5,38305.0,1997
+Happy Death Day,tt5308322,7.5,Yes,6.6,128035.0,1997
+Hereditary,tt7784604,9.5,Yes,7.3,269158.0,1997
+Isle of Dogs,tt5104604,8.0,Yes,7.9,151493.0,1997
+The Shape of Water,tt5580390,7.5,Yes,7.3,393506.0,1997
+Hold the Dark,tt5057140,5.0,Yes,5.6,35301.0,1997
+A Star is Born,tt1517451,9.0,Yes,7.6,356182.0,1997
+You Were Never Really Here,tt5742374,5.0,No,6.8,111996.0,1997
+Outlaw King,tt6679794,7.5,Yes,6.9,65449.0,1997
+The Christmas Chronicles,tt11057644,8.0,Yes,6.0,24903.0,1997
+Bohemian Rhapsody,tt1727824,8.0,Yes,7.9,487735.0,1997
+Bandersnatch,tt9495224,9.6,Yes,7.1,119682.0,1997
+Bird Box,tt2737304,7.5,Yes,6.6,304415.0,1997
+Polar,tt0338348,5.2,Yes,6.6,187540.0,1997
+Alita Battle Angel,tt0437086,8.6,Yes,7.3,246974.0,1997
+Triple Frontier,tt1488606,4.7,No,6.4,117310.0,1997
+The Dirt,tt0800325,6.9,Yes,7.0,43966.0,1997
+The Highwaymen,tt1860242,3.0,No,6.9,83589.0,1997
+The Silence,tt7315484,0.9,No,5.3,41605.0,1997
+Avengers: Endgame,tt4154796,9.7,Yes,8.4,942318.0,1997
+Pet Sematary,tt0098084,4.6,No,6.6,98451.0,1997
+The Perfection,tt7772580,6.0,Yes,6.2,39466.0,1997
+Bad Times at the El Royale,tt6628394,7.4,Yes,7.1,138340.0,1997
+Rocketman ,tt2066051,9.3,Yes,7.3,158146.0,1997
+Gone Baby Gone,tt0452623,8.0,Yes,7.6,262407.0,1997
+Ad Astra,tt2935510,6.8,Yes,6.5,214306.0,1997
+Joker,tt7286456,9.6,Yes,8.4,1070365.0,1997
+El Camino,tt12481806,6.1,Yes,5.2,454.0,1997
+Midsomer,tt0647495,3.2,No,7.5,607.0,1997
+The King,tt1038685,7.7,Yes,3.0,4242.0,1997
+Midnight Family,tt6010976,6.1,Yes,7.4,1659.0,1997
+The Hunt,tt8244784,3.5,No,6.5,89427.0,1997
+The Invisible Man,tt1051906,8.1,Yes,7.1,192595.0,1997
+The Platform,tt2382011,7.4,Yes,6.3,23.0,1997
+Edward Scissorhands,tt0099487,5.8,No,7.9,461738.0,1997
+The Gentlemen,tt8367814,7.8,Yes,7.8,282168.0,1997
+Kung Fu Hustle,tt0373074,8.9,Yes,7.7,132864.0,1997
+Starship Troopers,tt0120201,9.4,Yes,7.2,279821.0,1997
+Signs,tt0286106,6.6,Yes,6.7,348411.0,1997
+21 Jump Street,tt1232829,8.0,Yes,7.2,527669.0,1997
+Extraction,tt8936646,6.1,Yes,6.7,179629.0,1997
+A Bronx Tale,tt0106489,8.6,Yes,7.8,134169.0,1997
+Jumanji,tt7975244,9.7,Yes,6.7,215048.0,1997
+Jumanji: Welcome to the Jungle,tt2283362,5.9,Yes,6.9,345147.0,1997
+Jumanji: Next Level,tt7975244,3.0,No,6.7,215048.0,1997
+Ready or Not,tt7798634,4.4,No,6.9,127556.0,1997
+Crawl,tt8364368,7.5,Yes,6.1,77631.0,1997
+Eurovision Song Contest: The Story of Fire Saga,tt8580274,5.3,Yes,6.5,85976.0,1997
+The Old Guard,tt7556122,6.0,Yes,6.7,146197.0,1997
+Scary Stories to Tell in the Dark,tt3387520,6.2,Yes,6.2,67963.0,1997
+Palm Springs,tt9484998,8.9,Yes,7.4,131621.0,1997
+Beverly Hills Ninja,tt0118708,8.6,Yes,5.6,40370.0,1997
+The Girl Next Door,tt0265208,7.3,No,6.7,215330.0,1997
+Talladega Nights: The Ballad of Ricky Bobby,tt0415306,8.9,Yes,6.6,175025.0,1997
+Air Force One,tt0118571,,,6.5,187816.0,1997
