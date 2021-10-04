@@ -24,7 +24,7 @@ This GitHub project is being supported by another of blog posts published in *To
 - *Parts 2 and beyond coming in Q4 2021! (I hope!)*
 
 # Project Scope
-![](docs/images/model-lifecycle.png | width=100)
+<img src="docs/images/model-lifecycle.png" width="100">
 
 As noted in the background, Caelan provides two scores to his movie ratings:
 - A binary "yes/no" approval
