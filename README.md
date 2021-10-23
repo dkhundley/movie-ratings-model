@@ -24,7 +24,9 @@ This GitHub project is being supported by another of blog posts published in *To
 - *Parts 2 and beyond coming in Q4 2021! (I hope!)*
 
 # Project Scope
-![](docs/images/model-lifecycle.png)
+<p align="center">
+<img src="docs/images/model-lifecycle.png" width="500">
+</p>
 
 As noted in the background, Caelan provides two scores to his movie ratings:
 - A binary "yes/no" approval
@@ -39,7 +41,7 @@ Noted by the small graphic above, this project will take place in five parts. Th
 - **Model Training**: Once we have determined which algorithms we will use for each of the respective predictive models, we will use this phase to create a formal model training pipeline, from start to finish. This is also equivalent to the automation of everything in previous three phases.
 - **Inference API**: I would like to use this model to support other projects, so to help assist with that, we will be creating an inference API with these predictive models housed inside of it.
 
-# Data Dictionary
+# Supporting Data
 As part of the phase 1 section on data gathering, this data dictionary below shows the data we will be working with in this project along with associated attributes about the data.
 
 ## Data Dictionary Table
@@ -54,5 +56,7 @@ As part of the phase 1 section on data gathering, this data dictionary below sho
 | `budget` | Amount of money the movie cost to create in dollars | `int64` | TMDb | ✅ |
 | `primary_genre` | Primary genre of the movie as determined by TMDb | `str` | TMDb | ✅ |
 | `secondary_genre` | Secondary genre of the movie as determined by TMDb | `str` | TMDb | ✅ |
+| rt_critic_score | Critic consensus score from Rotten Tomatoes | `str` | OMDb | ✅ |
+| another_data_element | Blah blah blah | `int` | Test | ❌ |
 
 ## Data Sources and Attributions
