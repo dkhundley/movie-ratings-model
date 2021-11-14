@@ -22,5 +22,3 @@ def load_raw():
 
 if __name__ == '__main__':
     load_raw()
-
-# Comment!
