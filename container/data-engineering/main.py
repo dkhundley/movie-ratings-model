@@ -15,6 +15,6 @@ from get_google_sheets_data import *
 
 ## SCRIPT INSTANTIATION
 ## ---------------------------------------------------------------------------------------------------------------------
-if __name__ == __main__:
+if __name__ == "__main__":
     # Getting the raw data from the Google Spreadsheet
     get_google_sheets_data()
