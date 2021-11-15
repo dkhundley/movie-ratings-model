@@ -17,4 +17,8 @@ from get_google_sheets_data import *
 ## ---------------------------------------------------------------------------------------------------------------------
 if __name__ == "__main__":
     # Getting the raw data from the Google Spreadsheet
-    get_google_sheets_data()
+    print('Retrieving Google sheets data...')
+    df_reviews = get_google_sheets_data()
+    print('Google sheets retrieval finished!')
+    
+    print(df_reviews.head())
