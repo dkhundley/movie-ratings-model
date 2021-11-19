@@ -65,6 +65,6 @@ def get_google_sheets_data():
     df_reviews.rename(columns = NEW_COL_NAMES, inplace = True)
     
     # Saving Caelan's reviews to a CSV file
-    df_reviews.to_csv('../data/raw/caelan-reviews.csv', index = False)
+    df_reviews.to_csv(os.path.join(OUTPUT_PATH, 'caelan_reviews.csv'), index = False )
     
     return df_reviews

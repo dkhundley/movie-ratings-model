@@ -1,0 +1,9 @@
+# GENERAL DATA SCIENCE PACKAGES
+numpy==1.21.4
+pandas==1.3.4
+
+# SPECIFIC API PACKAGES
+tmdbv3api==1.7.6
+IMDbPY==2021.4.18
+omdb==0.10.1
+rotten-tomatoes-scraper==1.4.0
