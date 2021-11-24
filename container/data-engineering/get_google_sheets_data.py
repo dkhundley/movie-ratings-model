@@ -36,12 +36,12 @@ def load_google_sheet(sheet_id, sheet_name):
     
     
     
-def get_google_sheets_data():
+def get_google_sheets_data(OUTPUT_PATH):
     """
     Gets data from the Google spreadsheet containing Caelan's reviews
     
     Args:
-        - N/A
+        - OUTPUT_PATH (str): The prefix of the output path where the output CSV will be saved to
     Returns:
         - A saved CSV to the raw data directory
         - df_reviews: A Pandas DataFrame containing Caelan's reviews

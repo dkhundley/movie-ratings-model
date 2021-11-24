@@ -13,7 +13,7 @@ docker build -t movie-ratings-model:dev .
 
 # Running the Docker container while mounting the sagemaker_dir
 echo 'Running the Docker image for data engineering...'
-docker run -v /tests/sagemaker_dir:/opt/ml movie-ratings-model:dev preprocess
+docker run -v $(pwd)/tests/sagemaker_dir:/opt/ml movie-ratings-model:dev preprocess
 
 # Moving outputs on job completion into appropriate data directory
 echo 'Moving the outputs into appropriate final directory...'
