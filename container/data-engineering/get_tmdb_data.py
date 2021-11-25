@@ -4,16 +4,16 @@ import tmdbv3api
 
 
 
-def get_tmdb_data(df_all_data, tmdb_key):
+def get_tmdb_data(df_new_data, tmdb_key):
     """
     Retrieving the appropriate data from The Movies Database (TMDb)
 
     Args:
-        - df_all_data (Pandas DataFrame): A DataFrame containing the movies that need new data collected
+        - df_new_data (Pandas DataFrame): A DataFrame containing the movies that need new data collected
         - tmdb_key (str): A string representing our API key for interacting with TMDb's API
 
     Returns:
-        - df_all_data (Pandas DataFrame): A DataFrame containing all the data from before plus the TMDb data
+        - df_new_data (Pandas DataFrame): A DataFrame containing all the data from before plus the TMDb data
     """
     
     # Printing the starting statement
@@ -32,7 +32,7 @@ def get_tmdb_data(df_all_data, tmdb_key):
     df_tmdb = pd.DataFrame(columns = TMDB_FEATS)
 
     # Iterating through the df_ratings DataFrame to get the names for extracting detailed info from TMDb
-    for index, row in df_all_data.iterrows():
+    for index, row in df_new_data.iterrows():
         # Extracting info from df_ratings
         movie_name = row['movie_name']
         biehn_scale_rating = row['biehn_scale_rating']
@@ -92,9 +92,9 @@ def get_tmdb_data(df_all_data, tmdb_key):
     df_tmdb.rename(columns = TMDB_NEW_COL_NAMES, inplace = True)
 
     # Using df_tmdb as source for all new data in a single DataFrame
-    df_all_data = df_tmdb
+    df_new_data = df_tmdb
     
     # Printing the completion statement
     print('Data collection from TMDb complete!')
 
-    return df_all_data
+    return df_new_data

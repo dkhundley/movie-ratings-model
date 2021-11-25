@@ -2,16 +2,16 @@ import numpy as np
 import pandas as pd
 from omdb import OMDBClient
 
-def get_omdb_data(df_all_data, omdb_key):
+def get_omdb_data(df_new_data, omdb_key):
     """
     Retrieving the appropriate data from the Open Movie Database (OMDb)
 
     Args:
-        - df_all_data (Pandas DataFrame): A DataFrame containing the movies that need new data collected
+        - df_new_data (Pandas DataFrame): A DataFrame containing the movies that need new data collected
         - omdb_key (str): A string representing the API key for OMDb
 
     Returns:
-        - df_all_data (Pandas DataFrame): A DataFrame containing all the data from before plus the OMDb data
+        - df_new_data (Pandas DataFrame): A DataFrame containing all the data from before plus the OMDb data
     """
     
     # Printing the starting statement
@@ -21,7 +21,7 @@ def get_omdb_data(df_all_data, omdb_key):
     omdb_client = OMDBClient(apikey = omdb_key)
     
     # Iterating through all the movies to extract the proper OMDb information
-    for index, row in df_all_data.iterrows():
+    for index, row in df_new_data.iterrows():
         # Extracting movie name from the row
         movie_name = row['movie_name']
         
@@ -44,14 +44,14 @@ def get_omdb_data(df_all_data, omdb_key):
                     
         # Populating Rotten Tomatoes critic score appropriately
         if rt_critic_score:
-            df_all_data.loc[index, 'rt_critic_score'] = rt_critic_score
+            df_new_data.loc[index, 'rt_critic_score'] = rt_critic_score
         else:
-            df_all_data.loc[index, 'rt_critic_score'] = np.nan
+            df_new_data.loc[index, 'rt_critic_score'] = np.nan
             
         # Populating the Metacritic metascore appropriately
-        df_all_data.loc[index, 'metascore'] = omdb_details['metascore']
+        df_new_data.loc[index, 'metascore'] = omdb_details['metascore']
     
     # Printing the completion statement
     print('Data collection from OMDb complete!')
     
-    return df_all_data
+    return df_new_data

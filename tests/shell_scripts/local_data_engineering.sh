@@ -19,9 +19,10 @@ docker run -v $(pwd)/tests/sagemaker_dir:/opt/ml movie-ratings-model:dev preproc
 echo 'Moving the outputs into appropriate final directory...'
 mv tests/sagemaker_dir/output/caelan_reviews.csv data/raw/caelan_reviews.csv
 mv tests/sagemaker_dir/output/all_data.csv data/raw/all_data.csv
+mv tests/sagemaker_dir/output/train.csv data/clean/train.csv
 
 # Deleting data from sagemaker_dir
 echo 'Deleting data from sagemaker_dir'
 rm tests/sagemaker_dir/input/data/all_data.csv
 
-echo 'Data engineering test complete!'
+echo 'Data engineering local test complete!'

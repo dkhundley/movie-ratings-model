@@ -2,7 +2,6 @@
 import os
 import yaml
 import pandas as pd
-from rotten_tomatoes_scraper.rt_scraper import MovieScraper
 
 # Importing the helper functions from other adjacent files
 from get_google_sheets_data import *
@@ -10,6 +9,9 @@ from generate_delta import *
 from get_tmdb_data import *
 from get_imdb_data import *
 from get_omdb_data import *
+from get_rt_data import *
+from save_and_join_raw_data import *
+from perform_feature_engineering import *
 
 
 
@@ -42,15 +44,29 @@ if __name__ == "__main__":
     df_reviews = get_google_sheets_data(OUTPUT_PATH)
     
     # Slimming down the data to a delta to not duplicate data already gathered
-    df_all_data = generate_delta(df_reviews, df_previous_run)
-
-    # Getting the data from TMDb
-    df_all_data = get_tmdb_data(df_all_data, tmdb_key)
-
-    # Getting the data from IMDb
-    df_all_data = get_imdb_data(df_all_data)
+    df_new_data = generate_delta(df_reviews, df_previous_run, OUTPUT_PATH)
     
-    # Getting the data from OMDb
-    df_all_data = get_omdb_data(df_all_data, omdb_key)
-    print(df_all_data.head())
-    print(df_all_data.info())
+    # Collecting new data if new movies are present
+    if len(df_new_data) != 0:
+        # Getting the data from TMDb
+        df_new_data = get_tmdb_data(df_new_data, tmdb_key)
+    
+        # Getting the data from IMDb
+        df_new_data = get_imdb_data(df_new_data)
+        
+        # Getting the data from OMDb
+        df_new_data = get_omdb_data(df_new_data, omdb_key)
+        
+        # Getting the data from Rotten Tomatoes
+        df_new_data = get_rt_data(df_new_data)
+        
+        # Joining the new data with the previous one and saving the full raw output
+        df_all_data = save_and_join_raw_data(df_previous_run, df_new_data, OUTPUT_PATH)
+        
+    elif len(df_new_data) == 0:
+        # Setting copy appropriately
+        df_all_data = df_previous_run
+        
+    # Performing feature engineering
+    df_clean = perform_feature_engineering(df_all_data, OUTPUT_PATH)
+  
