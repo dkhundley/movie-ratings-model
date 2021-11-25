@@ -42,9 +42,10 @@ def generate_delta(df_reviews, df_previous_run, OUTPUT_PATH):
         df_previous_run.to_csv(os.path.join(OUTPUT_PATH, 'all_data.csv'), index = False)
         
         # Printing exit message
-        print('No new movies are present.')
+        print('No new movies are present. Exiting script.')
         
-        return df_new_data
+        # Stopping the Python script
+        exit(0)
     
     # Printing how many new movies will need additional data
     print(f'Number of new movies needing data: {len(df_new_data)}')
