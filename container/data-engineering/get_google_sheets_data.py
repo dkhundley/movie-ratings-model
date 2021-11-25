@@ -47,6 +47,9 @@ def get_google_sheets_data(OUTPUT_PATH):
         - df_reviews: A Pandas DataFrame containing Caelan's reviews
     """
     
+    # Printing start statement
+    print('Retrieving Google sheets data...')
+    
     # Getting the respective sheet data
     df_main = load_google_sheet(SHEET_ID, 'main')
     df_patreon = load_google_sheet(SHEET_ID, 'patreon')
@@ -66,5 +69,8 @@ def get_google_sheets_data(OUTPUT_PATH):
     
     # Saving Caelan's reviews to a CSV file
     df_reviews.to_csv(os.path.join(OUTPUT_PATH, 'caelan_reviews.csv'), index = False )
+    
+    # Priting completion statement
+    print('Google sheets retrieval finished!')
     
     return df_reviews

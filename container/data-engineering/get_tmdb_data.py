@@ -1,4 +1,6 @@
 import numpy as np
+import pandas as pd
+import tmdbv3api
 
 
 
@@ -7,12 +9,15 @@ def get_tmdb_data(df_all_data, tmdb_key):
     Retrieving the appropriate data from The Movies Database (TMDb)
 
     Args:
-        - df_all_data (Pandas DataFrame): A DataFrame containing all the data we have collected so far
+        - df_all_data (Pandas DataFrame): A DataFrame containing the movies that need new data collected
         - tmdb_key (str): A string representing our API key for interacting with TMDb's API
 
     Returns:
         - df_all_data (Pandas DataFrame): A DataFrame containing all the data from before plus the TMDb data
     """
+    
+    # Printing the starting statement
+    print('Gathering data from TMDb...')
 
     # Instantiating the TMDb objects and setting the API key
     tmdb = tmdbv3api.TMDb()
@@ -68,7 +73,7 @@ def get_tmdb_data(df_all_data, tmdb_key):
             tmdb_details['secondary_genre'] = np.nan
 
         # Slimming down tmdb_details with only the features we want to keep
-        tmdb_details = {key: value for key, value in tmdb_details.items() if key in tmdb_feats}
+        tmdb_details = {key: value for key, value in tmdb_details.items() if key in TMDB_FEATS}
 
         # Converting the tmdb_details dictionary to a Pandas DataFrame
         new_tmdb_entry = pd.DataFrame.from_dict([tmdb_details])
@@ -88,5 +93,8 @@ def get_tmdb_data(df_all_data, tmdb_key):
 
     # Using df_tmdb as source for all new data in a single DataFrame
     df_all_data = df_tmdb
+    
+    # Printing the completion statement
+    print('Data collection from TMDb complete!')
 
     return df_all_data
