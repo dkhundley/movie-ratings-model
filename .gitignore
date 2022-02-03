@@ -463,6 +463,9 @@ __pycache__/
 OpenCover/
 junit/
 
+# Catboost Directory
+catboost_info/
+
 # Key Configurations Directory (added by dkhundley)
 keys/
 sensitive/
