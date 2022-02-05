@@ -61,6 +61,8 @@ As part of the phase 1 section on data gathering, this data dictionary below sho
 | `runtime`               | Length of the movie in minutes                                                                     | `int64`       | TMDb                                     | ✅ |
 | `primary_genre`         | Primary genre of the movie as determined by TMDb                                                   | `str`         | TMDb                                     | ✅ |
 | `secondary_genre`       | Secondary genre of the movie as determined by TMDb                                                 | `str`         | TMDb                                     | ✅ |
+| `imdb_rating`           | Movie rating as determined by IMDb                                                                 | `float64`     | IMDb                                     | ✅ |
+| `imdb_votes`            | Number of upvotes for movies from IMDb                                                             | `float64`     | IMDb                                     | ✅ |
 | `rt_critic_score`       | Critic consensus score from Rotten Tomatoes                                                        | `str`         | OMDb                                     | ✅ |
 | `metascore`             | Audience consensus score from Metacritic                                                           | `int64`       | OMDb                                     | ✅ |
 | `rt_audience_score`     | Audience consensus score from Rotten Tomatoes                                                      | `int64`       | RT Python Library                        | ✅ |
