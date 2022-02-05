@@ -18,6 +18,14 @@ This GitHub project is being supported by another of blog posts published in *To
 - [Part 1: Data Gathering!](https://towardsdatascience.com/creating-a-movie-rating-model-part-1-data-gathering-944bee6167c0)
 - *Parts 2 and beyond coming in Q4 2021! (I hope!)*
 
+## YouTube Livestreams
+As part of this project, I personally livestreamed almost all my work for these models as part of YouTube livestreams. Listed below are all the individual livestreams I did for this project:
+
+- [Gathering Data for a Movie Ratings Predictive Model](https://youtu.be/pG5rB0U5Lu4)
+- [Performing Feature Engineering on Our Movie Ratings Model](https://youtu.be/cvyuuUhfuo8)
+- [Training the Binary Classification Algorithms for Our Movie Ratings Model Project](https://youtu.be/a81CmXDKGVU)
+- [Training the Regression Algorithms for Our Movie Ratings Model Project](https://youtu.be/0SigpRPnWew)
+
 ## Project Scope
 <p align="center">
 <img src="docs/images/model-lifecycle.png" width="500">
@@ -41,17 +49,22 @@ As part of the phase 1 section on data gathering, this data dictionary below sho
 
 ### Data Dictionary Table
 
-| **Feature Name** | **Description** | **Data Type** | **Data Source** | **Used in Model?** |
-| ---------------- | --------------- | ------------- | --------------- | ------------------ |
-| `movie_name`| Name of the movie rated | `str` | Google Spreadsheet created by @dkhundley | ❌ |
-| `biehn_scale_yes_or_no` | Binary "yes/no" approval as rated by Caelan Biehn | `str` | Google Spreadsheet created by @dkhundley | ✅ |
-| `biehn_scale_rating` | 0-10 single decimal float score as rated by Caelan Biehn | `float64` | Google Spreadsheet created by @dkhundley | ✅ |
-| `tmdb_id` | Unique movie identifier used by The Movies Database (TMDb) associated to the `movie_name` | `str` | TMDb | ❌ |
-| `imdb_id` | Unique movie identifier used by the Internet Movies Database (IMDb) associated to the `movie_name` | `str` | TMDb | ❌ |
-| `budget` | Amount of money the movie cost to create in dollars | `int64` | TMDb | ✅ |
-| `primary_genre` | Primary genre of the movie as determined by TMDb | `str` | TMDb | ✅ |
-| `secondary_genre` | Secondary genre of the movie as determined by TMDb | `str` | TMDb | ✅ |
-| rt_critic_score | Critic consensus score from Rotten Tomatoes | `str` | OMDb | ✅ |
-| another_data_element | Blah blah blah | `int` | Test | ❌ |
+| **Feature Name**        | **Description**                                                                                    | **Data Type** | **Data Source**                          | **Used in Model?** |
+|-------------------------|----------------------------------------------------------------------------------------------------|---------------|------------------------------------------| ------------------ |
+| `movie_name`            | Name of the movie rated                                                                            | `str`         | Google Spreadsheet created by @dkhundley | ❌ |
+| `biehn_scale_yes_or_no` | Binary "yes/no" approval as rated by Caelan Biehn                                                  | `str`         | Google Spreadsheet created by @dkhundley | ✅ |
+| `biehn_scale_rating`    | 0-10 single decimal float score as rated by Caelan Biehn                                           | `float64`     | Google Spreadsheet created by @dkhundley | ✅ |
+| `tmdb_id`               | Unique movie identifier used by The Movies Database (TMDb) associated to the `movie_name`          | `str`         | TMDb                                     | ❌ |
+| `imdb_id`               | Unique movie identifier used by the Internet Movies Database (IMDb) associated to the `movie_name` | `str`         | TMDb                                     | ❌ |
+| `budget`                | Amount of money the movie cost to create in dollars                                                | `int64`       | TMDb                                     | ✅ |
+| `revenue`               | Amount of money the movie made in revenue in dollars                                               | `int64`       | TMDb                                     | ✅ |
+| `runtime`               | Length of the movie in minutes                                                                     | `int64`       | TMDb                                     | ✅ |
+| `primary_genre`         | Primary genre of the movie as determined by TMDb                                                   | `str`         | TMDb                                     | ✅ |
+| `secondary_genre`       | Secondary genre of the movie as determined by TMDb                                                 | `str`         | TMDb                                     | ✅ |
+| `rt_critic_score`       | Critic consensus score from Rotten Tomatoes                                                        | `str`         | OMDb                                     | ✅ |
+| `metascore`             | Audience consensus score from Metacritic                                                           | `int64`       | OMDb                                     | ✅ |
+| `rt_audience_score`     | Audience consensus score from Rotten Tomatoes                                                      | `int64`       | RT Python Library                        | ✅ |
+
+
 
 ### Data Sources and Attributions
