@@ -70,3 +70,9 @@ As part of the phase 1 section on data gathering, this data dictionary below sho
 
 
 ### Data Sources and Attributions
+With the exception of the data that I gathered as part of a Google Spreadsheet, all data defined in the table above was gathered from the following sources:
+
+- [The Movies Database (TMDb)](https://www.themoviedb.org/?language=en-US): TMDb is an open source, online movie database that people can get lots of information about almost any kind of movie.
+- [Internet Movie Database (IMDb)](https://www.imdb.com) The most renowned movies database on the internet, we used this source to specifically obtain the IMDb ratings and vote counts for each movie.
+- [The Open Movie Database (OMDb)](http://www.omdbapi.com/) Similar to TMDb, OMDb is an open source movie database that contains some information not found on TMDb, including Metacritic's Metascore and the Rotten Tomatoes critic score.
+- [Rotten Tomatoes](https://www.rottentomatoes.com/) This infamous source specifically focuses on movie reviews, and we will be using the Rotten Tomatoes audience and critic scores to support this model.
