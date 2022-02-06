@@ -3,6 +3,8 @@
 # Movie Rating Model Project!
 This repository houses all the code created by David Hundley to create a model for predicting future movie ratings from movie reviewer extraordinaire and lover of all things sour, Caelan Biehn. 🎬
 
+
+
 ## Background
 I (David Hundley) enjoy listening to a lot of podcasts, but none of them quite captured my consistent interest as that of a podcast called **The Watercooler**. Aptly referred to once by somebody who shall remain unnamed (only because I forgot who), The Watercooler is very much the Seinfeld of podcasts: it's a podcast about... nothing! It's a time when five guys get together to talk about how their weeks are going, food, movies, cultural phenomenons, and more. The Watercooler has recurring bits, and one of these bits is a time in which the aforementioned Caelan Biehn will rate anything and everything, from grass (8.9) to the word "facetious" (9.4) to his own daughter (9.0). That's right, folks, the word "facetious" edged out his own daughter on this illustrious Biehn scale.
 
@@ -12,11 +14,16 @@ All silliness aside, I thought it would be fun to build a predictive model aroun
 
 **WOOF WOOF!**
 
+
+
 ## Blog Posts
-This GitHub project is being supported by another of blog posts published in *Toward Data Science* on the Medium platform. For your convenience, I have linked to each of the respective posts in this series:
+This GitHub project is being supported by another of blog posts published in *Toward Data Science* on the Medium platform. If you would like to view the blog posts as a collective group on Medium, [check out this link](https://medium.com/tag/dkhundley-movie-model). For your convenience, I have linked to each of the respective posts in this series:
 
 - [Part 1: Data Gathering!](https://towardsdatascience.com/creating-a-movie-rating-model-part-1-data-gathering-944bee6167c0)
-- *Parts 2 and beyond coming in Q4 2021! (I hope!)*
+- [Part 2: Five Feature Engineering Tactics](https://towardsdatascience.com/creating-a-movie-rating-model-part-2-five-feature-engineering-tactics-dc9d363bebcd)
+- [Part 3: Testing Out Model Algorithm Candidates](https://medium.com/@dkhundley/creating-movie-rating-model-part-3-testing-out-model-algorithm-candidates-612c7cf480ce)
+
+
 
 ## YouTube Livestreams
 As part of this project, I personally livestreamed almost all my work for these models as part of YouTube livestreams. Listed below are all the individual livestreams I did for this project:
@@ -25,6 +32,8 @@ As part of this project, I personally livestreamed almost all my work for these 
 - [Performing Feature Engineering on Our Movie Ratings Model](https://youtu.be/cvyuuUhfuo8)
 - [Training the Binary Classification Algorithms for Our Movie Ratings Model Project](https://youtu.be/a81CmXDKGVU)
 - [Training the Regression Algorithms for Our Movie Ratings Model Project](https://youtu.be/0SigpRPnWew)
+
+
 
 ## Project Scope
 <p align="center">
@@ -43,6 +52,8 @@ Noted by the small graphic above, this project will take place in five parts. Th
 - **Algorithm Selection**: As noted above, we will test out a number of different algorithms as part of this phase to see which fares the best in terms of accuracy and performance. The algorithm selection will also include a piece to perform hyperparameter tuning for each of the respective algorithms.
 - **Model Training**: Once we have determined which algorithms we will use for each of the respective predictive models, we will use this phase to create a formal model training pipeline, from start to finish. This is also equivalent to the automation of everything in previous three phases.
 - **Inference API**: I would like to use this model to support other projects, so to help assist with that, we will be creating an inference API with these predictive models housed inside of it.
+
+
 
 ## Supporting Data
 As part of the phase 1 section on data gathering, this data dictionary below shows the data we will be working with in this project along with associated attributes about the data.
@@ -66,8 +77,6 @@ As part of the phase 1 section on data gathering, this data dictionary below sho
 | `rt_critic_score`       | Critic consensus score from Rotten Tomatoes                                                        | `str`         | OMDb                                     | ✅ |
 | `metascore`             | Audience consensus score from Metacritic                                                           | `int64`       | OMDb                                     | ✅ |
 | `rt_audience_score`     | Audience consensus score from Rotten Tomatoes                                                      | `int64`       | RT Python Library                        | ✅ |
-
-
 
 ### Data Sources and Attributions
 With the exception of the data that I gathered as part of a Google Spreadsheet, all data defined in the table above was gathered from the following sources:
