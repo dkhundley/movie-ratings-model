@@ -20,8 +20,8 @@ All silliness aside, I thought it would be fun to build a predictive model aroun
 This GitHub project is being supported by another of blog posts published in *Toward Data Science* on the Medium platform. If you would like to view the blog posts as a collective group on Medium, [check out this link](https://medium.com/tag/dkhundley-movie-model). For your convenience, I have linked to each of the respective posts in this series:
 
 - [Part 1: Data Gathering!](https://towardsdatascience.com/creating-a-movie-rating-model-part-1-data-gathering-944bee6167c0)
-- [Part 2: Five Feature Engineering Tactics](https://towardsdatascience.com/creating-a-movie-rating-model-part-2-five-feature-engineering-tactics-dc9d363bebcd)
-- [Part 3: Testing Out Model Algorithm Candidates](https://medium.com/@dkhundley/creating-movie-rating-model-part-3-testing-out-model-algorithm-candidates-612c7cf480ce)
+- [Part 2: Five Feature Engineering Tactics!](https://towardsdatascience.com/creating-a-movie-rating-model-part-2-five-feature-engineering-tactics-dc9d363bebcd)
+- [Part 3: Testing Out Model Algorithm Candidates!](https://medium.com/@dkhundley/creating-movie-rating-model-part-3-testing-out-model-algorithm-candidates-612c7cf480ce)
 
 
 
