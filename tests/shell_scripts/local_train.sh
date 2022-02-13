@@ -22,7 +22,7 @@ mv tests/sagemaker_test_dir/models/regression_pipeline.pkl models/regression_pip
 
 # Removing the training data from the SageMaker test directory
 echo 'Cleaning up training data...'
-#rm tests/sagemaker_test_dir/input/data/all_data.csv
+rm tests/sagemaker_test_dir/input/data/all_data.csv
 
 # Printing statement to note train job completion
 echo 'Model training complete!'
