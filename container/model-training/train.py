@@ -1,5 +1,6 @@
 # Importing the necessary Python libraries
 import os
+import sys
 import cloudpickle
 import pandas as pd
 from category_encoders.one_hot import OneHotEncoder
@@ -101,3 +102,6 @@ if __name__ == "__main__":
     # Saving the regression pipeline to a serialized pickle file
     with open(os.path.join(MODEL_PATH, 'regression_pipeline.pkl'), 'wb') as f:
         cloudpickle.dump(regression_pipeline, f)
+
+    # Exiting with a zero code to let SageMaker know training job's success
+    sys.exit(0)

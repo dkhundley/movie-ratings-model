@@ -18,9 +18,12 @@ ENV PATH="/opt/program:${PATH}"
 EXPOSE 8080
 
 # Moving the project files from local into Docker image
-COPY keys/ /opt/keys
-COPY models/ /opt/models
 COPY container/ /opt/program
 
 # Setting the working directory to be "opt/program/"
 WORKDIR /opt/program
+
+# Making the proper files into executable shell scripts
+RUN chmod +x serve
+RUN chmod +x train
+RUN chmod +x preprocess
