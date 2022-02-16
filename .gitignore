@@ -471,6 +471,6 @@ keys/
 sensitive
 
 # SageMaker Test Direrectory Ignores (added by dkhundley)
-tests/sagemaker_test_dir/input/data/
-tests/sagemaker_test_dir/models/
+tests/sagemaker_test_dir/input/train/data/
+tests/sagemaker_test_dir/model/
 tests/sagemaker_test_dir/output/

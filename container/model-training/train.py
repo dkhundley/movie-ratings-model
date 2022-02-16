@@ -22,8 +22,8 @@ from helpers import *
 PRIMARY_DIRECTORY = "/opt/ml/"
 
 # Noting the subdirectories underneath the primary directory
-INPUT_PATH = os.path.join(PRIMARY_DIRECTORY, 'input/data')
-MODEL_PATH = os.path.join(PRIMARY_DIRECTORY, 'models')
+INPUT_PATH = os.path.join(PRIMARY_DIRECTORY, 'input/data/train')
+MODEL_PATH = os.path.join(PRIMARY_DIRECTORY, 'model')
 OUTPUT_PATH = os.path.join(PRIMARY_DIRECTORY, 'output')
 
 
