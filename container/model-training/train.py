@@ -19,7 +19,7 @@ from helpers import *
 ## PROJECT SUPPORT
 ## ---------------------------------------------------------------------------------------------------------------------
 # Pointing to the primary directory where data will be loaded and saved
-PRIMARY_DIRECTORY = "/opt/ml/"
+PRIMARY_DIRECTORY = '/opt/ml/'
 
 # Noting the subdirectories underneath the primary directory
 INPUT_PATH = os.path.join(PRIMARY_DIRECTORY, 'input/data/train')
