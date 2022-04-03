@@ -81,7 +81,7 @@ omdb_client = OMDBClient(apikey = omdb_key)
 @api.post('/predict')
 async def predict(request: Request):
 
-    print(request.body())
+    print(await request.body())
 
     # Getting JSON from the body of the request and loading as Pandas DataFrame
     df = pd.DataFrame([await request.json()])
