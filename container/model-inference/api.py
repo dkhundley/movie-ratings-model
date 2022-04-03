@@ -193,9 +193,9 @@ async def predict(request: Request):
 	print(df[['movie_name', 'biehn_yes_or_no', 'biehn_scale_score']])
 
 	# Establishing final output as a dictionary
-	output_dict = {'movie_name': df['movie_name'],
-	               'biehn_yes_or_no': df['biehn_yes_or_no'],
-	               'biehn_scale_score': df['biehn_scale_score']}
+	output_dict = {'movie_name': df['movie_name'][0],
+	               'biehn_yes_or_no': df['biehn_yes_or_no'][0],
+	               'biehn_scale_score': df['biehn_scale_score'][0]}
 
 	# Crafting the final response
 	final_response = jsonable_encoder(output_dict)
