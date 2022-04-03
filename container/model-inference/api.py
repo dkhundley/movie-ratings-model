@@ -23,7 +23,6 @@ from helpers import *
 # Instantiating FastAPI
 api = FastAPI()
 
-
 # Loading the models from the serialized pickle files
 with open('../../models/binary_classification_pipeline.pkl', 'rb') as f:
 	binary_classification_pipeline = cloudpickle.load(f)
