@@ -81,13 +81,17 @@ omdb_client = OMDBClient(apikey = omdb_key)
 @api.post('/predict')
 async def predict(request: Request):
 
-    print(await request.body())
+    # Getting the response from the body of the request
+    response_body = await request.body())
 
-    # Getting JSON from the body of the request and loading as Pandas DataFrame
-    df = pd.DataFrame([await request.json()])
+    # Converting response from binary to standard string
+    movie_name = response_body.decode('ascii')
 
-    # Extracting the movie name from the DataFrame
-    movie_name = df['movie_name'][0]
+#     # Getting JSON from the body of the request and loading as Pandas DataFrame
+#     df = pd.DataFrame([await request.json()])
+#
+#     # Extracting the movie name from the DataFrame
+#     movie_name = df['movie_name'][0]
 
     # Getting TMDb full search results
     tmdb_search_results = tmdb_search.movies({'query': movie_name})
