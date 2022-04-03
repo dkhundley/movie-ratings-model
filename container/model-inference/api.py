@@ -11,6 +11,8 @@ from imdb import IMDb
 from omdb import OMDBClient
 from rotten_tomatoes_scraper.rt_scraper import MovieScraper
 from fastapi import FastAPI, Request
+from fastapi.responses import JSONResponse
+from fastapi.encoders import jsonable_encoder
 
 # Importing the inference helper functions
 sys.path.insert(0, '../model-training/')
@@ -189,3 +191,13 @@ async def predict(request: Request):
 	# Getting the inference for the Biehn Scale score
 	df['biehn_scale_score'] = regression_pipeline.predict(df[ALL_FEATS])
 	print(df[['movie_name', 'biehn_yes_or_no', 'biehn_scale_score']])
+
+	# Establishing final output as a dictionary
+	output_dict = {'movie_name': df['movie_name'],
+	               'biehn_yes_or_no': df['biehn_yes_or_no'],
+	               'biehn_scale_score': df['biehn_scale_score']}
+
+	# Crafting the final response
+	final_response = jsonable_encoder(output_dict)
+
+	return JSONResponse(content = final_response)
