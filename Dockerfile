@@ -6,7 +6,7 @@ RUN apt-get --yes update
 RUN apt-get --yes install gcc libxml2
 
 # Installing Python dependencies
-COPY dependencies/requirements.txt /
+COPY requirements.txt /
 RUN pip install -r /requirements.txt
 
 # Setting the environment variables required by AWS SageMaker

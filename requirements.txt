@@ -1,5 +1,7 @@
 # GENERAL PACKAGES
 cloudpickle==2.0.0
+fastapi==0.71.0
+gunicorn==20.1.0
 PyYAML==6.0
 
 # DATA SCIENCE PACKAGES
