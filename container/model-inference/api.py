@@ -1,4 +1,5 @@
 # Importing the necessary Python libraries
+import os
 import sys
 import json
 import yaml
@@ -29,13 +30,22 @@ with open('../../models/binary_classification_pipeline.pkl', 'rb') as f:
 with open('../../models/regression_pipeline.pkl', 'rb') as f:
 	regression_pipeline = cloudpickle.load(f)
 
-# Loading the API keys from the separate, secret YAML file
-with open('../../keys/keys.yml', 'r') as f:
-    keys_yaml = yaml.safe_load(f)
+# Checking for Heroku environment variable
+IS_HEROKU = os.getenv('IS_HEROKU')
 
-# Extracting the API keys from the loaded YAML
-tmdb_key = keys_yaml['api_keys']['tmdb_key']
-omdb_key = keys_yaml['api_keys']['omdb_key']
+# Loading the API keys from respective sources
+if IS_HEROKU == 'Yes':
+    # Getting the keys from the Heroku environment variables
+    tmdb_key = os.getenv('TMDB_KEY')
+    omdb_key = os.getenv('OMDB_KEY')
+else:
+    # Loading local YAML file containing keys
+    with open('../../keys/keys.yml', 'r') as f:
+        keys_yaml = yaml.safe_load(f)
+
+    # Extracting the API keys from the loaded YAML
+    tmdb_key = keys_yaml['api_keys']['tmdb_key']
+    omdb_key = keys_yaml['api_keys']['omdb_key']
 
 # Defining which features to keep from each respective source
 TMDB_FEATS = ['tmdb_id', 'imdb_id', 'budget', 'primary_genre', 'secondary_genre',
