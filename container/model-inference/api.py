@@ -28,9 +28,9 @@ IS_HEROKU = os.getenv('IS_HEROKU')
 
 # Loading the models from the serialized pickle files
 if IS_HEROKU == 'Yes':
-    with open(os.path.join(os.getcwd(), 'binary_classification_pipeline.pkl'), 'rb') as f:
+    with open(os.path.join(os.getcwd(), './models/binary_classification_pipeline.pkl'), 'rb') as f:
         binary_classification_pipeline = cloudpickle.load(f)
-    with open(os.path.join(os.getcwd(), 'regression_pipeline.pkl'), 'rb') as f:
+    with open(os.path.join(os.getcwd(), './models/regression_pipeline.pkl'), 'rb') as f:
         regression_pipeline = cloudpickle.load(f)
 else:
     with open('../../models/binary_classification_pipeline.pkl', 'rb') as f:
