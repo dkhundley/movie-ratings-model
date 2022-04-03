@@ -82,7 +82,7 @@ omdb_client = OMDBClient(apikey = omdb_key)
 async def predict(request: Request):
 
     # Getting the response from the body of the request
-    response_body = await request.body())
+    response_body = await request.body()
 
     # Converting response from binary to standard string
     movie_name = response_body.decode('ascii')
