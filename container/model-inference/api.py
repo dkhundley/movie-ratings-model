@@ -81,7 +81,7 @@ omdb_client = OMDBClient(apikey = omdb_key)
 @api.post('/predict')
 async def predict(request: Request):
 
-    print(request.Body)
+    print(request.body())
 
     # Getting JSON from the body of the request and loading as Pandas DataFrame
     df = pd.DataFrame([await request.json()])
@@ -197,7 +197,7 @@ async def predict(request: Request):
     # Establishing final output as a dictionary
     output_dict = {'movie_name': df['movie_name'][0],
                    'biehn_yes_or_no': df['biehn_yes_or_no'][0],
-                   'biehn_scale_score': df['biehn_scale_score'][0]}
+                   'biehn_scale_score': df['biehn_scale_score'][0]}ba
 
     # Crafting the final response
     final_response = jsonable_encoder(output_dict)
