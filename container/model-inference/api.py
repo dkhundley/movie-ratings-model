@@ -87,8 +87,9 @@ async def predict(request: Request):
     # Converting response from binary to standard string
     movie_name = response_body.decode('ascii')
 
-#     # Getting JSON from the body of the request and loading as Pandas DataFrame
-#     df = pd.DataFrame([await request.json()])
+    # Getting JSON from the body of the request and loading as Pandas DataFrame
+    df = pd.DataFrame(data = movie_name, columns = ['movie_name'])
+    print(df)
 #
 #     # Extracting the movie name from the DataFrame
 #     movie_name = df['movie_name'][0]
