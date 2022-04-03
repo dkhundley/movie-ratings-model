@@ -82,7 +82,7 @@ async def predict(request: Request):
 	# Getting JSON from the body of the request and loading as Pandas DataFrame
 	df = pd.DataFrame([await request.json()])
 
-	# Extracting the demo movie name from df
+    # Extracting the demo movie name from df
     movie_name = df['movie_name'][0]
 
 	# Getting TMDb full search results
