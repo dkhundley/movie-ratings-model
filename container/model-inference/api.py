@@ -88,7 +88,7 @@ async def predict(request: Request):
     movie_name = response_body.decode('ascii')
 
     # Getting JSON from the body of the request and loading as Pandas DataFrame
-    df = pd.DataFrame(data = movie_name, columns = ['movie_name'])
+    df = pd.DataFrame(data = [movie_name], columns = ['movie_name'])
     print(df)
 #
 #     # Extracting the movie name from the DataFrame
