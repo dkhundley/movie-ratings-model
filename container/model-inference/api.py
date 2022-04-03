@@ -23,14 +23,20 @@ from helpers import *
 # Instantiating FastAPI
 api = FastAPI()
 
-# Loading the models from the serialized pickle files
-with open('../../models/binary_classification_pipeline.pkl', 'rb') as f:
-	binary_classification_pipeline = cloudpickle.load(f)
-with open('../../models/regression_pipeline.pkl', 'rb') as f:
-	regression_pipeline = cloudpickle.load(f)
-
 # Checking for Heroku environment variable
 IS_HEROKU = os.getenv('IS_HEROKU')
+
+# Loading the models from the serialized pickle files
+if IS_HEROKU == 'Yes':
+    with open('binary_classification_pipeline.pkl', 'rb') as f:
+        binary_classification_pipeline = cloudpickle.load(f)
+    with open('regression_pipeline.pkl', 'rb') as f:
+        regression_pipeline = cloudpickle.load(f)
+else:
+    with open('../../models/binary_classification_pipeline.pkl', 'rb') as f:
+    	binary_classification_pipeline = cloudpickle.load(f)
+    with open('../../models/regression_pipeline.pkl', 'rb') as f:
+    	regression_pipeline = cloudpickle.load(f)
 
 # Loading the API keys from respective sources
 if IS_HEROKU == 'Yes':
