@@ -1,1 +1,1 @@
-web: gunicorn --worker-class uvicorn.workers.UvicornWorker --chdir ./container/model-inference/ test-api:api
+web: uvicorn --app-dir ./container/model-inference test-api:api
