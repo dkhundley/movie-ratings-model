@@ -116,7 +116,7 @@ def get_movie_prediction(movie_name, tmdb_key, omdb_key, binary_classification_p
 
     # Defining which features to keep from each respective source
     TMDB_FEATS = ['tmdb_id', 'imdb_id', 'budget', 'primary_genre', 'secondary_genre',
-    			  'tmdb_popularity', 'revenue', 'runtime', 'tmdb_vote_average', 'tmdb_vote_count']
+                  'tmdb_popularity', 'revenue', 'runtime', 'tmdb_vote_average', 'tmdb_vote_count']
     IMDB_FEATS = ['imdb_rating', 'imdb_votes', 'year']
     OMDB_FEATS = ['rt_critic_score', 'metascore']
     ROTT_FEATS = ['rt_audience_score']

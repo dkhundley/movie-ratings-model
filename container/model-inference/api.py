@@ -16,7 +16,7 @@ from fastapi.encoders import jsonable_encoder
 
 # Importing the inference helper functions
 sys.path.insert(0, '../model-training/')
-from helpers import *
+from helpers import get_movie_inference
 
 
 
@@ -71,7 +71,7 @@ async def predict(request: Request):
     df = pd.DataFrame(data = [movie_name], columns = ['movie_name'])
 
     # Getting the movie review predictions appropriately
-    final_scores = get_movie_prediction(movie_name, tmdb_key, omdb_key, binary_classification_pipeline, regression_pipeline)
+    final_scores = get_movie_inference(movie_name, tmdb_key, omdb_key, binary_classification_pipeline, regression_pipeline)
 
     # Crafting the final response
     final_response = jsonable_encoder(final_scores)
