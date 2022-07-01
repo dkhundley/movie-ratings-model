@@ -18,7 +18,7 @@ ENV PATH="/opt/program:${PATH}"
 EXPOSE 8080
 
 # Moving the project files from local into Docker image
-COPY container/ /opt/program
+COPY src/ /opt/program
 
 # Setting the working directory to be "opt/program/"
 WORKDIR /opt/program
