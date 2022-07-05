@@ -3,6 +3,7 @@ import cloudpickle
 from fastapi import FastAPI, Request, Form
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse, HTMLResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from helpers import *
 
@@ -12,9 +13,6 @@ from helpers import *
 ## ---------------------------------------------------------------------------------------------------------------------
 # Instantiating the FastAPI object
 api = FastAPI()
-
-# Instantiating an object to hold the HTML files
-html_templates = Jinja2Templates(directory = 'html_files')
 
 # Loading the API keys from the separate, secret YAML file
 with open('../../keys/keys.yml', 'r') as f:
@@ -30,6 +28,11 @@ with open('../../models/binary_classification_pipeline.pkl', 'rb') as f:
 with open('../../models/regression_pipeline.pkl', 'rb') as f:
     regression_pipeline = cloudpickle.load(f)
 
+# Instantiating an object to hold the HTML files
+html_templates = Jinja2Templates(directory = 'webpage/html')
+
+# Mounting the CSS file for use by the HTML rendered pages
+api.mount('/css', StaticFiles(directory = 'webpage/css'), name = 'css')
 
 
 ## API ENDPOINTS
