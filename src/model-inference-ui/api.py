@@ -1,3 +1,6 @@
+# Importing the necessary Python libraries
+import os
+import sys
 import yaml
 import cloudpickle
 from fastapi import FastAPI, Request, Form
@@ -14,19 +17,34 @@ from helpers import *
 # Instantiating the FastAPI object
 api = FastAPI()
 
-# Loading the API keys from the separate, secret YAML file
-with open('../../keys/keys.yml', 'r') as f:
-    keys_yaml = yaml.safe_load(f)
+# Checking for Heroku environment variable
+IS_HEROKU = os.getenv('IS_HEROKU')
 
-# Extracting the API keys from the loaded YAML
-tmdb_key = keys_yaml['api_keys']['tmdb_key']
-omdb_key = keys_yaml['api_keys']['omdb_key']
+# Loading the models from the serialized pickle files
+if IS_HEROKU == 'Yes':
+    with open(os.path.join(os.getcwd(), './models/binary_classification_pipeline.pkl'), 'rb') as f:
+        binary_classification_pipeline = cloudpickle.load(f)
+    with open(os.path.join(os.getcwd(), './models/regression_pipeline.pkl'), 'rb') as f:
+        regression_pipeline = cloudpickle.load(f)
+else:
+    with open('../../models/binary_classification_pipeline.pkl', 'rb') as f:
+        binary_classification_pipeline = cloudpickle.load(f)
+    with open('../../models/regression_pipeline.pkl', 'rb') as f:
+        regression_pipeline = cloudpickle.load(f)
 
-# Loading the respective models from the serialized pickle files
-with open('../../models/binary_classification_pipeline.pkl', 'rb') as f:
-    binary_classification_pipeline = cloudpickle.load(f)
-with open('../../models/regression_pipeline.pkl', 'rb') as f:
-    regression_pipeline = cloudpickle.load(f)
+# Loading the API keys from respective sources
+if IS_HEROKU == 'Yes':
+    # Getting the keys from the Heroku environment variables
+    tmdb_key = os.getenv('TMDB_KEY')
+    omdb_key = os.getenv('OMDB_KEY')
+else:
+    # Loading local YAML file containing keys
+    with open('../../keys/keys.yml', 'r') as f:
+        keys_yaml = yaml.safe_load(f)
+
+    # Extracting the API keys from the loaded YAML
+    tmdb_key = keys_yaml['api_keys']['tmdb_key']
+    omdb_key = keys_yaml['api_keys']['omdb_key']
 
 # Instantiating an object to hold the HTML files
 html_templates = Jinja2Templates(directory = 'webpage/html')
