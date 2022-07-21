@@ -1,6 +1,5 @@
 # Importing the necessary Python libraries
 import os
-import sys
 import yaml
 import cloudpickle
 from fastapi import FastAPI, Request, Form
@@ -46,11 +45,19 @@ else:
     tmdb_key = keys_yaml['api_keys']['tmdb_key']
     omdb_key = keys_yaml['api_keys']['omdb_key']
 
-# Instantiating an object to hold the HTML files
-html_templates = Jinja2Templates(directory = 'webpage/html')
 
-# Mounting the CSS file for use by the HTML rendered pages
-api.mount('/css', StaticFiles(directory = 'webpage/css'), name = 'css')
+if IS_HEROKU == 'Yes':
+    # Instantiating an object to hold the HTML files
+    html_templates = Jinja2Templates(directory = os.path.join(os.getcwd(), 'src/model-inference-ui/webpage/html'))
+
+    # Mounting the CSS file for use by the HTML rendered pages
+    api.mount('/css', StaticFiles(directory = os.path.join(os.getcwd(), 'src/model-inference-ui/webpage/css')), name = 'css')
+else:
+    # Instantiating an object to hold the HTML files
+    html_templates = Jinja2Templates(directory = 'webpage/html')
+
+    # Mounting the CSS file for use by the HTML rendered pages
+    api.mount('/css', StaticFiles(directory = 'webpage/css'), name = 'css')
 
 
 ## API ENDPOINTS
